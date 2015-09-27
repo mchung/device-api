@@ -1,1 +1,1 @@
-web: rackup -p $PORT
+web: puma -p $PORT -t 8:32 -w 4 -b tcp://127.0.0.1
